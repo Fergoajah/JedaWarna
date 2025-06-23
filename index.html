@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paletta - Penjelajah Palet Warna Elegan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>JedaWarna</h1>
+        <p>Cari Warna Favoritmu</p>
+    </header>
+
+    <main>
+        <section class="color-picker-section">
+            <h2>Pilih Warna</h2>
+            <div class="color-picker-container">
+                <input type="color" id="mainColorPicker" value="#1a202c">
+                <div class="selected-color-display" style="background-color: #1a202c;"></div>
+                <div class="color-info">
+                    <p>HEX: <span id="hexValue">#1a202c</span></p>
+                    <p>RGB: <span id="rgbValue">rgb(26, 32, 44)</span></p>
+                </div>
+            </div>
+            <button id="addToPaletteBtn">Tambahkan ke Palet</button>
+        </section>
+
+        <section class="palette-display-section">
+            <h2>Palet Anda</h2>
+            <div id="paletteContainer" class="palette-container">
+                </div>
+            <button id="clearPaletteBtn">Bersihkan Palet</button> 
+        </section>
+
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Paletta. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
